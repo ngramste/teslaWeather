@@ -1,0 +1,46 @@
+.weatherTileContent {
+  text-align: left;
+  display: grid;
+  width: 92%;
+  height: 420px;
+  margin: 10px;
+  padding: 3px;
+  border: 2px solid gray;
+  grid-template-columns: 33% 67%;
+  grid-template-rows: 2em 2em 2em auto;
+  grid-template-areas:
+    'image title'
+    'image temp'
+    'image wind'
+    'detail detail';
+}
+
+.weatherTitle {
+  font-size: 1.25em;
+  padding: 6px;
+  grid-area: title;
+}
+
+.weatherImage {
+  padding: 4%;
+  width: 94%;
+  grid-area: image;
+}
+
+.weatherTemp {
+  font-size: 1.25em;
+  padding: 6px;
+  grid-area: temp;
+}
+
+.weatherWind {
+  font-size: 1em;
+  padding: 6px;
+  grid-area: wind;
+}
+
+.weatherDetail {
+  font-size: 1.35em;
+  padding: 6px;
+  grid-area: detail;
+}

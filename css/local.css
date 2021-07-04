@@ -1,0 +1,70 @@
+* {
+  margin: 0px;
+  padding: 0px
+}
+
+body {
+  background-color: #161616;
+  color: rgb(240, 240, 240);
+  text-align: center;
+  overflow: hidden;
+}
+
+#weatherLayout {
+  display: grid;
+  width: 100%;
+  height: 1200px;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 93px 372px 466px;
+  grid-template-areas:
+    'cityName cityName'
+    'current radar'
+    'weatherCarrage weatherCarrage';
+}
+
+#cityName {
+  font-size: 2.25em;
+  /* margin: 16px; */
+  grid-area: cityName;
+  overflow: hidden;
+}
+
+#current {
+  font-size: 4em;
+  padding: 20px;
+  grid-area: current;
+  overflow: hidden;
+}
+
+#radar {
+  padding: 20px;
+  grid-area: radar;
+  overflow: hidden;
+}
+
+#radar img {
+  width: 716px;
+  overflow: hidden;
+}
+
+#weatherCarrage {
+  padding: 20px;
+  grid-area: weatherCarrage;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  overflow: hidden;
+}
+
+.Day {
+  background-color: white;
+  color: black;
+}
+
+.Night {
+  background-color: #161616;
+  color: rgb(240, 240, 240);
+}
+
+.weatherTitle {
+  display: inline;
+}
